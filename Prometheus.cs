@@ -6,7 +6,7 @@ namespace dotnet_lib_prometheus
         {
             string metric = string.Empty;
 
-            name = string.Format("dell_switch_{0}", name).ToLower();
+            name = string.Format("{0}", name).ToLower();
 
             metric += string.Format("{0}{2} {1}\n", name, value, parameters);
 
@@ -16,7 +16,7 @@ namespace dotnet_lib_prometheus
         {
             string metric = string.Empty;
 
-            name = string.Format("dell_switch_{0}", name).ToLower();
+            name = string.Format("{0}", name).ToLower();
 
             metric += string.Format("# HELP {0} {1}\n", name, description);
             metric += string.Format("# TYPE {0} {1}\n", name, type);
